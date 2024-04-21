@@ -51,18 +51,25 @@ body {
         gap: 1rem;
         border-bottom: hsl(27, 66%, 92%) 1px solid;
         padding-bottom: 1rem;
+        box-sizing: border-box;
+        width: 100%;
         .chart__title {
           color: hsl(25, 47%, 15%);
           font-size: 25px;
+        }
+        .graph {
+          width: 275px; /* Set the desired width */
         }
       }
       .total {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .this__month {
           text-align: center;
           h2 {
             color: hsl(25, 47%, 15%);
+            font-size: 30px;
           }
           p {
             color: hsl(28, 10%, 53%);
@@ -75,6 +82,32 @@ body {
           }
           p {
             color: hsl(28, 10%, 53%);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  body {
+    .container {
+      width: 500px;
+      .balance__container {
+        padding: 1.5rem 2rem;
+      }
+
+      .bottom__container {
+        padding: 2rem;
+        .chart__container {
+          .chart__title {
+            margin-bottom: 2rem;
+          }
+          .graph {
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 200px;
+            padding-left: 1.25rem;
           }
         }
       }
