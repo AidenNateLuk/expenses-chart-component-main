@@ -14,22 +14,16 @@
 
     <title>Frontend Mentor | Expenses chart component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <div class="my__balance">
-        <label for="balance__input"> My balance </label>
-        <input readonly value="$921.48" />
+      <div class="balance__container">
+        <div class="balance">
+          <p>My balance</p>
+          <h1>$921.48</h1>
+        </div>
+        <div class="balance__image"></div>
       </div>
       <div class="chart">
         <div class="chart__title">Spending - Last 7 days</div>
